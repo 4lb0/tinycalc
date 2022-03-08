@@ -14,10 +14,10 @@ Don't worry, it works offline.
 
 ## Some tips
 
-* The multiple operator is `*`, example for 2 × 4
+* The multiplication operator is `*`, example for 2 × 4
 write [2\*4](https://tinycalc.app/#2*4)
-* The divition operator is `/`, example for 15 ÷ 3
+* The division operator is `/`, example for 15 ÷ 3
 write [15/3](https://tinycalc.app/#15%2F3)
-* The power operator is `^`, example for 3²
+* The exponential operator (power) is `^`, example for 3²
 write [3^2](https://tinycalc.app/#3^2)
 * Use parenthesis `()`, like in [((3+2)*(10-3))/4](https://tinycalc.app/#%28%283%2B2%29*%2810-3%29%29%2F4)
