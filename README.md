@@ -1,5 +1,7 @@
 # 🧮 tiny calc
 
+![Working demo](demo.gif)
+
 A simple calculator for your browser.
 Add it as a search engine.
 Works offline.
