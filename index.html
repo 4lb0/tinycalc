@@ -28,7 +28,8 @@ if ('serviceWorker' in navigator) {
 }
 const inputElement = document.querySelector('input')
 const calculate = () => {
-  const input = inputElement.value.replace(/[a-z]/g, '')
+  let input = inputElement.value.replace(/[a-z]/g, '')
+  input = input.replace(/\^/, '**')
   const resultElement = document.querySelector('strong')
   try {
     const result = Number(eval(input))
