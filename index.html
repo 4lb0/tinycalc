@@ -38,14 +38,18 @@ const calculate = () => {
     resultElement.innerHTML = '<em>Error</em>' 
   }
 }
-if (window.location.hash) {
+const calculateFromHash = () => {
   const input = decodeURIComponent(window.location.hash.substr(1))
   inputElement.value = input
   calculate()
   inputElement.setSelectionRange(input.length, input.length);
 }
+if (window.location.hash) {
+  calculateFromHash()
+}
 inputElement.focus()
 inputElement.addEventListener('keyup', calculate) 
+window.addEventListener('hashchange', calculateFromHash)
 </script>
 </body>
 </html>
