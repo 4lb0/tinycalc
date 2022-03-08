@@ -18,7 +18,10 @@ em { color: red }
 <body>
 <input name="q">
 <p>= <strong></strong></p>
-<footer>tinycalc.org by <a href="https://twitter.com/4lb0">albo</a></footer>
+<footer>
+  🧮 <a href="https://tinycalc.org">tiny calc</a>
+  <a href="https://github.com/4lb0/tinycalc/#readme">about</a>
+</footer>
 <script>
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/worker.js')
@@ -29,7 +32,7 @@ const calculate = () => {
   const resultElement = document.querySelector('strong')
   try {
     const result = Number(eval(input))
-    resultElement.innerHTML = result.toLocaleString()
+    resultElement.innerHTML = isNaN(result) ? '' : result.toLocaleString()
   } catch (err) {
     resultElement.innerHTML = '<em>Error</em>' 
   }
