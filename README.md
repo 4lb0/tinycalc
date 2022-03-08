@@ -1,4 +1,4 @@
-# 🧮 tiny calc
+# 🧮 [tiny calc](https://tinycalc.app)
 
 A simple calculator in your browser, because your browser is always open
 
