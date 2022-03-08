@@ -38,7 +38,7 @@ const calculate = () => {
   }
 }
 if (window.location.hash) {
-  const input = window.location.hash.substr(1)
+  const input = decodeURIComponent(window.location.hash.substr(1))
   inputElement.value = input
   calculate()
   inputElement.setSelectionRange(input.length, input.length);
