@@ -1,9 +1,9 @@
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
                        xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-  <ShortName>calc</ShortName>
-  <Description>tinycalc.org The simple calculator, because your browser is always open</Description>
+  <ShortName>tiny calc</ShortName>
+  <Description>tinycalc.app The simple calculator, because your browser is always open</Description>
   <InputEncoding>[UTF-8]</InputEncoding>
   <Image width="16" height="16" type="image/x-icon">data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22%3E%3Ctext%20y=%22.9em%22%20font-size=%2290%22%3E🧮%3C/text%3E%3C/svg%3E</Image>
-  <Url type="text/html" template="https://tinycalc.org/#{searchTerms}"/>
-  <moz:SearchForm>https://tinycalc.org</moz:SearchForm>
+  <Url type="text/html" template="https://tinycalc.app/#{searchTerms}"/>
+  <moz:SearchForm>https://tinycalc.app</moz:SearchForm>
 </OpenSearchDescription>

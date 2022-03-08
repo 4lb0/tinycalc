@@ -11,5 +11,5 @@ Works offline.
 The recommended keyword for Search Engine is `=`.
 
 The power operator is `^`, example for 3²
-write [3^2](https://tinycalc.org/#3^2)
+write [3^2](https://tinycalc.app/#3^2)
 
