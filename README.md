@@ -1,5 +1,7 @@
 # 🧮 tiny calc
 
+The simple calculator, because your browser is always open
+
 ![Working demo](demo.gif)
 
 A simple calculator for your browser.
@@ -8,5 +10,6 @@ Works offline.
 
 The recommended keyword for Search Engine is `=`.
 
-The power operator is `^`, example for 3<sup>2</sup> write [3^2](https://tinycalc.org/#3^2)
+The power operator is `^`, example for 3²
+write [3^2](https://tinycalc.org/#3^2)
 
