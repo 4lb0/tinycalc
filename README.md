@@ -1,6 +1,6 @@
 # 🧮 [tiny calc](https://tinycalc.app)
 
-A simple calculator in your browser, because your browser is always open
+A simple calculator in your browser, because your browser is always open. No ads, no tracking.
 
 ![Working demo](demo.gif)
 
