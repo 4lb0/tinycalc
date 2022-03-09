@@ -27,29 +27,29 @@ em{ color: red }
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/worker.js')
 }
-const inputElement = document.querySelector('input')
+const input = document.querySelector('input')
 const calculate = () => {
-  let input = inputElement.value.replace(/[a-z]/g, '')
-  input = input.replace(/\^/, '**')
-  const resultElement = document.querySelector('strong')
+  const formula = input.value.replace(/[a-z]/g, '').replace(/\^/, '**')
+  let value = ''
   try {
-    const result = Number(eval(input))
-    resultElement.innerHTML = isNaN(result) ? '' : result.toLocaleString()
+    const result = Number(eval(formula))
+    value = isNaN(result) ? '' : result.toLocaleString()
   } catch (err) {
-    resultElement.innerHTML = '<em>Error</em>' 
+    value = '<em>Error</em>'
   }
+  document.querySelector('strong').innerHTML = value
 }
 const calculateFromHash = () => {
-  const input = decodeURIComponent(window.location.hash.substr(1))
-  inputElement.value = input
+  const formula = decodeURIComponent(window.location.hash.substr(1))
+  input.value = formula
   calculate()
-  inputElement.setSelectionRange(input.length, input.length);
+  input.setSelectionRange(formula.length, formula.length);
 }
 if (window.location.hash) {
   calculateFromHash()
 }
-inputElement.focus()
-inputElement.addEventListener('keyup', calculate) 
+input.focus()
+input.addEventListener('keyup', calculate) 
 window.addEventListener('hashchange', calculateFromHash)
 </script>
 </body>
