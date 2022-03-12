@@ -29,7 +29,7 @@ if ('serviceWorker' in navigator) {
 }
 const input = document.querySelector('input')
 const calculate = () => {
-  const formula = input.value.replace(/[a-z]/g, '').replace(/\^/, '**')
+  const formula = input.value.replace(/[a-z\!\[\]]/g, '').replace(/\^/, '**')
   let value = ''
   try {
     const result = Number(eval(formula))
